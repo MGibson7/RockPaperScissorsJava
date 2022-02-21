@@ -152,7 +152,7 @@ document.getElementById("best5").textContent = "FIRST TO 5 WINS!";
  computerPlay();
  //console.log(rpsGame(playerSelection, computerSelection));
  document.getElementById("ppick").textContent = "Player Pick is rock!";
- document.getElementById("mpick").textContent = `Machine Pick is ${computerSelection}`;
+ document.getElementById("mpick").textContent = `Machine Pick is ${computerSelection}!`;
  document.getElementById("record").textContent = `${rpsGame(playerSelection, computerSelection)}`;
  grand_champ();
   });
@@ -163,7 +163,7 @@ paper.addEventListener('click', function(){
     computerPlay();
     //console.log(rpsGame(playerSelection, computerSelection));
     document.getElementById("ppick").textContent = "Player Pick is paper!";
-    document.getElementById("mpick").textContent = `Machine Pick is ${computerSelection}`;
+    document.getElementById("mpick").textContent = `Machine Pick is ${computerSelection}!`;
     document.getElementById("record").textContent = `${rpsGame(playerSelection, computerSelection)}`;
     grand_champ();
      });
