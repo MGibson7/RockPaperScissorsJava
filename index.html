@@ -5,9 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script type="text/javascript" src="rpsgame.js"></script>
+    <link href = "rpsstyle.css" rel = "stylesheet">
 </head>
 <body>
+    <div class = "header">
+        <h1 id = "rockh">ROCK</h1>
+        <h1 id = "paperh">PAPER</h1>
+        <h1 id = "scissorsh">SCISSORS</h1>
+        <h2 id = "record"></h2>
+
+    </div>
+    <div class = "container">
+        <div class = "man">
+            <div class = "stats">
+                <img src = "./img/manjpeg">
+                <div id = "rockPick">
+                <img src = "./img/rock.jpeg">
+                <button id = "rock">ROCK</button>
+                </div>
+                <div id = "paperPick">
+                    <img src = "./img/paper.jpeg">
+                    <button id = "paper">PAPER</button>
+                </div>
+                <div id = "scissorsPick">
+                    <img src = "./img/scissors.jpeg">
+                    <button id = "scissors">PAPER</button>
+                </div>
+
+
+            </div>
+            <h2>MAN</h2>
+            <h2 id = "ppick"></h2>
+
+        </div>
+
+        <div class = "vs">
+            <h2>VS</h2>
+
+        </div>
+
+        <div class = "man">
+            <div class = "stats">
+                <img src = "./img/machine.jpeg">
+                <div id = "question">
+                    <img src = "./img/question.jpeg">
+
+                </div>
+
+
+            </div>
+            <h2>MACHINE</h2>
+            <h2 id = "mpick"></h2>
+
+        
+
+        </div>
+        
+
+    </div>
+    
+        
+
+    <!--ALWAYS PUT SCRIPT AT END OF BODY-->
+
+    <script type="text/javascript" src="rpsgame.js"></script>
+
     
 </body>
 </html>
