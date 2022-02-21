@@ -120,33 +120,64 @@ keepPlaying = "yes";
 //}
 //console.log(`Thanks for playing FINAL RECORD ${player_wins} wins and ${player_losses} losses and ${player_ties} ties`);
 
+let player_titles = 0;
+let computer_titles = 0;
+
+function grand_champ(){
+    if (player_wins == 5){
+        document.getElementById("best5").textContent = "You've won 5 games, you are the CHAMPION!";
+        player_wins = 0;
+        player_losses = 0;
+        player_ties = 0;
+        player_titles++;
+        document.getElementById("titles").textContent = `PLAYER TITLES ${player_titles} COMPUTER TITLES ${computer_titles}`;
+        
+    }
+    else if (player_losses == 5){
+        document.getElementById("best5").textContent = "You have lost to the machine :("
+        player_wins = 0;
+        player_losses = 0;
+        player_ties = 0;
+        computer_titles++;
+        document.getElementById("titles").textContent = `PLAYER TITLES ${player_titles} COMPUTER TITLES ${computer_titles}`;
+    }
+    else{}
+};
 
 
 
 rock.addEventListener('click', function(){
+document.getElementById("best5").textContent = "FIRST TO 5 WINS!";
  playerSelection = "rock";
  computerPlay();
  //console.log(rpsGame(playerSelection, computerSelection));
  document.getElementById("ppick").textContent = "Player Pick is rock!";
  document.getElementById("mpick").textContent = `Machine Pick is ${computerSelection}`;
  document.getElementById("record").textContent = `${rpsGame(playerSelection, computerSelection)}`;
+ grand_champ();
   });
 
 paper.addEventListener('click', function(){
+    document.getElementById("best5").textContent = "FIRST TO 5 WINS!";
     playerSelection = "paper";
     computerPlay();
     //console.log(rpsGame(playerSelection, computerSelection));
     document.getElementById("ppick").textContent = "Player Pick is paper!";
     document.getElementById("mpick").textContent = `Machine Pick is ${computerSelection}`;
     document.getElementById("record").textContent = `${rpsGame(playerSelection, computerSelection)}`;
+    grand_champ();
      });
 
 scissors.addEventListener('click', function(){
+    document.getElementById("best5").textContent = "FIRST TO 5 WINS!";
     playerSelection = "scissors";
     computerPlay();
     //console.log(rpsGame(playerSelection, computerSelection));
     document.getElementById("ppick").textContent = "Player Pick is scissors!";
     document.getElementById("mpick").textContent = `Machine Pick is ${computerSelection}!`;
     document.getElementById("record").textContent = `${rpsGame(playerSelection, computerSelection)}`;
+    grand_champ();
      });
+
+
 
