@@ -52,10 +52,11 @@ button:hover{
     cursor: pointer;
 }
 
-.header, .container{
+.header, .container, .records{
     display: flex;
     max-width: 90%;
 }
+
 
 .header{
     align-content: center;
