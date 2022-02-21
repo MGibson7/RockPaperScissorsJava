@@ -104,6 +104,7 @@ h1{
 
 img{
     flex-basis: 70%;
-    max-height: 200px;
+    min-height: 0px;
+    max-height: 100px;
 
 }
