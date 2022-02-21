@@ -9,7 +9,7 @@ html{
 body{
     background-color: black;
     color: white;
-    max-width: 100%;
+    max-width: 90%;
 }
 
 
@@ -54,7 +54,7 @@ button:hover{
 
 .header, .container{
     display: flex;
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .header{
@@ -77,6 +77,7 @@ h1{
 .man, .machine{
     flex-direction: row;
     flex-basis: 100%;
+    max-width: 90%;
 
 }
 
